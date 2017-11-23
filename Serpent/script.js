@@ -3,14 +3,14 @@ window.onload = function () {
     var canvasWidth = 900;
     var canvasHeight = 600;
     var blockSize = 30;
-    
+
     var delay = 100;
     var snakee;
     var applee;
 
     var widthInBlocks = canvasWidth / blockSize;
     var heightInBlocks = canvasHeight / blockSize;
-    
+
     var score;
     var timeout;
 
@@ -54,9 +54,9 @@ window.onload = function () {
                 }
                 while (applee.isOnSnake(snakee))
             }
-            
+
             ctx.clearRect(0, 0, canvasWidth, canvasHeight);
-            
+
             drawScore();
             snakee.draw();
             applee.draw();
